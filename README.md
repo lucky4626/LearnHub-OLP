@@ -87,7 +87,7 @@ Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
 
 ## 📬 Contact
 
-For questions or suggestions, please open an issue or contact [bhargav2006](https://github.com/bhargav2006).
+For questions or suggestions, please open an issue or contact https://github.com/lucky4626/LearnHub-OLP.
 
 ---
 
