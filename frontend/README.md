@@ -1,14 +1,8 @@
-# Frontend - LearnHub 
+# React + Vite
 
-This folder contains the frontend part of the LearnHub project.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Features:
-- Course listing page
-- Add new course form
-- User-friendly UI with Bootstrap & Material UI
-- Axios integration to communicate with backend
+Currently, two official plugins are available:
 
-## Files:
-- index.html – Main page
-- script.js – Handles form submission and API calls
-- style.css – Basic styling
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh

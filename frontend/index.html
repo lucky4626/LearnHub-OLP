@@ -1,55 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>LearnHub - Add Course</title>
-  <script>
-    async function addCourse() {
-      const title = document.getElementById("title").value;
-      const description = document.getElementById("description").value;
-
-      const course = { title, description };
-
-      const response = await fetch("http://localhost:5001/add-course", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(course)
-      });
-
-      const result = await response.json();
-      alert("Course added successfully!");
-      loadCourses();
-    }
-
-    async function loadCourses() {
-      const response = await fetch("http://localhost:5001/courses");
-      const courses = await response.json();
-
-      const courseList = document.getElementById("courseList");
-      courseList.innerHTML = "";
-
-      courses.forEach(course => {
-        const item = document.createElement("li");
-        item.textContent = `${course.title}: ${course.description}`;
-        courseList.appendChild(item);
-      });
-    }
-
-    window.onload = loadCourses;
-  </script>
-</head>
-<body>
-  <h1>LearnHub - Add New Course</h1>
-  <label>Title: <input type="text" id="title" /></label><br><br>
-  <label>Description: <input type="text" id="description" /></label><br><br>
-  <button onclick="addCourse()">Add Course</button>
-
-  <h2>Course List</h2>
-  <ul id="courseList"></ul>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
-
-
-
